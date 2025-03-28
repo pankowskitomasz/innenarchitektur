@@ -1,62 +1,93 @@
 <!DOCTYPE html>
-<html lang="de">
-    <head>
-        <meta charset="utf-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-        <link rel="stylesheet" type="text/css" href="css/styles.min.css"/>
-        <title>Innenarchitektur | Fehler</title>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-md position-absolute w-100 bg-white">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/logo.png" alt="firmenlogo"/>
-                </a>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#hauptmenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="hauptmenu">
-                    <ul class="navbar-nav ms-auto text-end">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="nachrichten.html">Nachrichten</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="dienstleistungen.html">Dienstleistungen</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="kontakt.html">Kontakt</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="einloggen.html">Einloggen</a>
-                        </li>
-                    </ul>
-                </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css">
+    <title></title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md position-absolute w-100">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img class="img-fluid" src="img/logo.png">
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainnav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainnav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signin.html">Sign in</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        <main>
-            <section class="container fehler-s1 d-flex py-3 mh-100vh">
-                <div class="row my-auto text-center text-md-start px-md-5 w-100">               
-                    <div class="col-10 col-sm-8 col-md-6 offset-1 offset-sm-2 offset-md-3 text-center">
-                        <div class="alert alert-danger">
-                            <h3 class="text-center font-header">Fehler 404!</h3>
-                            <p class="initialism">
-                                Seite nicht gefunden!
-                            </p>                  
-                            <a href="kontakt.html" 
-                                class="btn btn-danger">Zurück</a>
+        </div>
+    </nav>
+    <main>
+        <div class="error-s1 container-fluid d-flex mh-100vh">
+            <div class="row my-auto w-100">
+                <div class="col-8 col-sm-6 col-md-4 col-lg-3 mx-auto">
+                    <div class="card text-center p-3">
+                        <h2>Error 404</h2>
+                        <p>
+
+                        </p>
+                        <div>
+                            <a class="btn btn-sm btn-secondary rounded-pill" href="index.html">Back to Home</a>
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
-        <footer class="container-fluid bg-secondary mh-50vh">
-            <div class="row">
-
             </div>
-        </footer>
-    </body>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid d-flex bg-100 pt-2 border-top">
+            <div class="row my-auto w-100 p-3 pb-0 opacity-75 mx-auto">
+                <div class="col-12 col-md-5 col-lg-4 text-light text-shadow small">
+                    <h5 class="fw-bold text-uppercase small">
+                        At vero eos et
+                    </h5>
+                    <p class="small">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                    </p>
+                    <p class="small">
+                        Consetetur sadipscing elitr
+                    </p>
+                    <p class="small">
+                        At accusam aliquyam diam
+                    </p>
+                </div>
+                <div class="col-12 col-md-5 offset-md-2 col-lg-4 offset-lg-4">
+                    <h5 class="initialism fw-bold text-white">
+                        Subscribe to our newsletter
+                    </h5>
+                    <form class="text-end" method="post" action="">
+                        <input type="email" class="form-control mb-2 rounded-0" placeholder="Enter email">
+                        <input type="submit" class="btn btn-light rounded-0" value="Subscribe">
+                    </form>
+                </div>
+                <div class="col-12 small">
+                    <p class="border-top initialism small text-light text-center">
+                        Copyright &copy; 2025
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+</body>
 </html>
